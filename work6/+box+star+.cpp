@@ -5,6 +5,7 @@ void center();
 void footer();
 
 int main() {
+    printf("Enter number : ");
     scanf_s("%d",&a[0]);
     header();
     center();
@@ -18,12 +19,12 @@ void header() {
     }
 }
 void center() {
-    int b = a[0] - 2;
-    for (int i = 0; i < b; i++)
+    a[2] = a[0] - 2;
+    for (int i = 0; i < a[2]; i++)
     {
         printf("\n");
         printf("*");
-        for (int x = 0; x < b; x++) {
+        for (int x = 0; x < a[2]; x++) {
             printf(" ");
         }
         printf("*");
